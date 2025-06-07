@@ -11,6 +11,7 @@ namespace contact_management_winforms
         public Form1()
         {
             InitializeComponent();
+            this.FormClosed += Form1_FormClosed; // Subscribe to the FormClosed event
             _dbContext = new ContactDbContext();
         }
 
@@ -192,15 +193,10 @@ namespace contact_management_winforms
             ClearInputFields();
         }
 
-        // Ensure DbContext is disposed when the form is closed
-        protected override void Dispose(bool disposing)
+        // Handles the FormClosed event to dispose of the DbContext.
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (disposing)
-            {
-                _dbContext?.Dispose();
-                components?.Dispose();
-            }
-            base.Dispose(disposing);
+            _dbContext?.Dispose();
         }
     }
 }
