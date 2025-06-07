@@ -2,9 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-practice", ".\csharp-practice\csharp-practice.csproj", "{3D7EB9D5-4F05-C315-44BF-BF9E919B1FDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-practice", "csharp-practice\csharp-practice.csproj", "{3D7EB9D5-4F05-C315-44BF-BF9E919B1FDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "implicit-var-declaration", ".\implicit-var-declaration\implicit-var-declaration.csproj", "{72178FB5-99F8-4D67-BC04-049AE0837700}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "implicit-var-declaration", "implicit-var-declaration\implicit-var-declaration.csproj", "{72178FB5-99F8-4D67-BC04-049AE0837700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "book-manager-wpf", "book-manager-wpf\book-manager-wpf.csproj", "{FFB4DEC5-70CE-472A-BCA2-92FC3C7F5547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "book-manager-winforms", "book-manager-winforms\book-manager-winforms.csproj", "{4E709A28-E4D9-4DF5-B721-2D9968517A42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +24,14 @@ Global
 		{72178FB5-99F8-4D67-BC04-049AE0837700}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72178FB5-99F8-4D67-BC04-049AE0837700}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72178FB5-99F8-4D67-BC04-049AE0837700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB4DEC5-70CE-472A-BCA2-92FC3C7F5547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB4DEC5-70CE-472A-BCA2-92FC3C7F5547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB4DEC5-70CE-472A-BCA2-92FC3C7F5547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB4DEC5-70CE-472A-BCA2-92FC3C7F5547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E709A28-E4D9-4DF5-B721-2D9968517A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E709A28-E4D9-4DF5-B721-2D9968517A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E709A28-E4D9-4DF5-B721-2D9968517A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E709A28-E4D9-4DF5-B721-2D9968517A42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
