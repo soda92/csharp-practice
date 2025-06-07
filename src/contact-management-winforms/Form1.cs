@@ -42,10 +42,10 @@ namespace contact_management_winforms
             dgvContacts.Columns.Clear(); // Clear existing columns if any
 
             dgvContacts.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Id", HeaderText = "ID", Visible = false });
-            dgvContacts.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Name", HeaderText = "Name", Width = 150 });
-            dgvContacts.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "PhoneNumber", HeaderText = "Phone Number", Width = 120 });
+            dgvContacts.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Name", HeaderText = "名称", Width = 150 });
+            dgvContacts.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "PhoneNumber", HeaderText = "手机号码", Width = 120 });
             dgvContacts.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Email", HeaderText = "Email", Width = 150 });
-            dgvContacts.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Address", HeaderText = "Address", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill });
+            dgvContacts.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Address", HeaderText = "住址", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill });
         }
 
         private void LoadContacts()
@@ -112,7 +112,7 @@ namespace contact_management_winforms
         {
             if (string.IsNullOrWhiteSpace(txtName.Text))
             {
-                MessageBox.Show("Name cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("名字不能为空.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -127,7 +127,7 @@ namespace contact_management_winforms
             _dbContext.Contacts.Add(newContact);
             _dbContext.SaveChanges();
             LoadContacts(); // Refresh and clear fields
-            MessageBox.Show("Contact added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("联系人添加成功!", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -139,7 +139,7 @@ namespace contact_management_winforms
             }
             if (string.IsNullOrWhiteSpace(txtName.Text))
             {
-                MessageBox.Show("Name cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("名字不能为空.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -159,18 +159,18 @@ namespace contact_management_winforms
 
             _dbContext.SaveChanges();
             LoadContacts(); // Refresh and clear fields
-            MessageBox.Show("Contact updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("联系人修改成功!", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (_selectedContact == null || dgvContacts.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a contact to delete.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("请选择一个联系人进行删除.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
-            var result = MessageBox.Show($"Are you sure you want to delete '{_selectedContact.Name}'?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            var result = MessageBox.Show($"确定删除 '{_selectedContact.Name}'?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
                 var contactToDelete = _dbContext.Contacts.Find(_selectedContact.Id);
@@ -184,7 +184,7 @@ namespace contact_management_winforms
                      MessageBox.Show("Contact not found in database. It might have already been deleted.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 LoadContacts(); // Refresh and clear fields
-                MessageBox.Show("Contact deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("联系人删除成功!", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
