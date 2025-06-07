@@ -7,7 +7,7 @@ namespace book_manager_wpf.Services
 {
     public class BookService
     {
-        private SQLiteAsyncConnection _db;
+        private SQLiteAsyncConnection? _db; // Made nullable to reflect lazy initialization
 
         private async Task Init()
         {
@@ -21,32 +21,32 @@ namespace book_manager_wpf.Services
         public async Task<List<Book>> GetBooksAsync()
         {
             await Init();
-            return await _db.Table<Book>().ToListAsync();
+            return await _db!.Table<Book>().ToListAsync();
         }
 
         public async Task<Book> GetBookAsync(int id)
         {
             await Init();
-            return await _db.Table<Book>().Where(i => i.Id == id).FirstOrDefaultAsync();
+            return await _db!.Table<Book>().Where(i => i.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<int> SaveBookAsync(Book book)
         {
             await Init();
-            if (book.Id != 0)
+            if (book.Id != 0) // Existing book
             {
-                return await _db.UpdateAsync(book);
+                return await _db!.UpdateAsync(book);
             }
-            else
+            else // New book
             {
-                return await _db.InsertAsync(book);
+                return await _db!.InsertAsync(book);
             }
         }
 
         public async Task<int> DeleteBookAsync(Book book)
         {
             await Init();
-            return await _db.DeleteAsync(book);
+            return await _db!.DeleteAsync(book);
         }
     }
 }
