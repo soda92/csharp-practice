@@ -1,4 +1,4 @@
-namespace book_manager_winforms
+namespace contact_management_winforms
 {
     internal static class Program
     {
