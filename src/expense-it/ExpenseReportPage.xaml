@@ -42,13 +42,13 @@
             <!-- Name -->
             <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
                 <Label Style="{StaticResource labelStyle}">名称:</Label>
-                <Label Style="{StaticResource labelStyle}"></Label>
+                <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Name}"></Label>
             </StackPanel>
 
             <!-- Department -->
             <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal">
                 <Label Style="{StaticResource labelStyle}">部门:</Label>
-                <Label Style="{StaticResource labelStyle}"></Label>
+                <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Department}"></Label>
             </StackPanel>
 
             <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top" 
