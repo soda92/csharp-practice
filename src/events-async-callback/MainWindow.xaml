@@ -1,0 +1,13 @@
+﻿<Window x:Class="events_async_callback.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:events_async_callback"
+        mc:Ignorable="d"
+        Title="Async Event Demo" Height="200" Width="400">
+    <StackPanel Margin="10">
+        <Button x:Name="StartOperationButton" Content="Start Long Operation" Click="StartOperationButton_Click"/>
+        <TextBlock x:Name="StatusTextBlock" Text="Click the button to start." Margin="5" TextWrapping="Wrap"/>
+    </StackPanel>
+</Window>
