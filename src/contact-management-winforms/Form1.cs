@@ -134,7 +134,7 @@ namespace contact_management_winforms
         {
             if (_selectedContact == null || dgvContacts.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a contact to update.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("请选择一个联系人来更新.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             if (string.IsNullOrWhiteSpace(txtName.Text))

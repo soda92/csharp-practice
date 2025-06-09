@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contact-management-winforms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "expense-it", "expense-it\expense-it.csproj", "{10335CB7-E70A-4883-954F-B553C7967C90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreWithWPF", "EFCoreWithWPF\EFCoreWithWPF.csproj", "{2296C53C-E430-4DEC-A5FF-37CA4741AD77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{10335CB7-E70A-4883-954F-B553C7967C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10335CB7-E70A-4883-954F-B553C7967C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10335CB7-E70A-4883-954F-B553C7967C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2296C53C-E430-4DEC-A5FF-37CA4741AD77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2296C53C-E430-4DEC-A5FF-37CA4741AD77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2296C53C-E430-4DEC-A5FF-37CA4741AD77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2296C53C-E430-4DEC-A5FF-37CA4741AD77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
