@@ -20,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegates-events", "delegat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "events-async-callback", "events-async-callback\events-async-callback.csproj", "{494DA65A-5FA6-4DA8-91E0-269737A13069}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq", "linq\linq.csproj", "{3BAB5592-CF52-4E6B-A99D-528A6D129C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fileio", "fileio\fileio.csproj", "{737EFF24-6503-4839-8438-4F73CBB85363}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +66,14 @@ Global
 		{494DA65A-5FA6-4DA8-91E0-269737A13069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{494DA65A-5FA6-4DA8-91E0-269737A13069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{494DA65A-5FA6-4DA8-91E0-269737A13069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAB5592-CF52-4E6B-A99D-528A6D129C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAB5592-CF52-4E6B-A99D-528A6D129C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAB5592-CF52-4E6B-A99D-528A6D129C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAB5592-CF52-4E6B-A99D-528A6D129C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737EFF24-6503-4839-8438-4F73CBB85363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737EFF24-6503-4839-8438-4F73CBB85363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737EFF24-6503-4839-8438-4F73CBB85363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737EFF24-6503-4839-8438-4F73CBB85363}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
