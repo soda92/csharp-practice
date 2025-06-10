@@ -134,7 +134,7 @@ namespace book_manager_wpf
                     dgBooks.SelectedItem = selectedBook; // Re-select the item
                 }
                 else { dgBooks.Items.Refresh(); /* Fallback */ }
-                
+
                 ClearInputFields();
                 MessageBox.Show("Book modified successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
