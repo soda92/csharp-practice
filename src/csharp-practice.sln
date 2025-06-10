@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq", "linq\linq.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fileio", "fileio\fileio.csproj", "{737EFF24-6503-4839-8438-4F73CBB85363}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-basic-layouts", "wpf-basic-layouts\wpf-basic-layouts.csproj", "{9DAF67CC-69EA-46AA-A7A0-6B4180E1729C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{737EFF24-6503-4839-8438-4F73CBB85363}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{737EFF24-6503-4839-8438-4F73CBB85363}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{737EFF24-6503-4839-8438-4F73CBB85363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DAF67CC-69EA-46AA-A7A0-6B4180E1729C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAF67CC-69EA-46AA-A7A0-6B4180E1729C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAF67CC-69EA-46AA-A7A0-6B4180E1729C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAF67CC-69EA-46AA-A7A0-6B4180E1729C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
