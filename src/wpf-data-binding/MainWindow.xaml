@@ -7,6 +7,88 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="20" Grid.Row="0">
+            <TextBlock Text="User Profile" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
 
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Welcome, "></TextBlock>
+                <TextBlock Text="{Binding UserName}" FontWeight="SemiBold"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Age: "/>
+                <TextBlock Text="{Binding Age}"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Margin="20" Grid.Row="1">
+            <TextBlock Text="Edit Profile" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"></TextBlock>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Username: " Width="80"/>
+                <TextBox Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Age:" Width="80"/>
+                <TextBox Text="{Binding Age, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Width="200"/>
+            </StackPanel>
+
+            <TextBlock Margin="0,10,0,0">
+                <Run Text="Current Username (from ViewModel): "/>
+                <Run Text="{Binding UserName}" FontWeight="Bold"/>
+            </TextBlock>
+            <TextBlock>
+                <Run Text="Current Age (from ViewModel): "/>
+                <Run Text="{Binding Age}" FontWeight="Bold"/>
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="20">
+            <TextBlock Text="Application Settings" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <CheckBox Content="User is logged in"
+                      IsChecked="{Binding IsLoggedIn, Mode=TwoWay}"
+                      Margin="0,5"/>
+
+            <TextBlock Margin="0,10,0,0">
+                <Run Text="Login Status (from ViewModel):"/>
+                <Run Text="{Binding IsLoggedIn}" FontWeight="Bold"/>
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="20" Grid.Column="1">
+            <TextBlock Text="Volume Control" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+            <Slider Minimum="0" Maximum="100"
+                    Value="{Binding Volume, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    TickFrequency="10" IsSnapToTickEnabled="True"
+                    Width="200" HorizontalAlignment="Left"
+                    Margin="0,5"/>
+
+            <TextBlock Text="{Binding Volume, StringFormat=Volume: {0:F0}%}" Margin="0,5"/>
+        </StackPanel>
+
+        <StackPanel Margin="20" Grid.Column="1" Grid.Row ="1">
+            <TextBlock Text="Select Category" FontSize="20" FontWeight="Bold"/>
+            <ComboBox Width="200" HorizontalAlignment="Left"
+                      ItemsSource="{Binding AvailableCategories}"
+                      DisplayMemberPath="Name" SelectedValuePath="Id"
+                      SelectedValue="{Binding SelectedCategoryId, Mode=TwoWay}"
+                      Margin="0,5"/>
+
+            <TextBlock Margin="0,10,0,0">
+                <Run Text="Selected Category ID: "></Run>
+                <Run Text="{Binding SelectedCategoryId}"/>
+            </TextBlock>
+        </StackPanel>
     </Grid>
 </Window>

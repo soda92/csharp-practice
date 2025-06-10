@@ -19,6 +19,7 @@ namespace wpf_data_binding
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MyViewModel();
         }
     }
 }

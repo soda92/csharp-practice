@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fileio", "fileio\fileio.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-basic-layouts", "wpf-basic-layouts\wpf-basic-layouts.csproj", "{9DAF67CC-69EA-46AA-A7A0-6B4180E1729C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-data-binding", "wpf-data-binding\wpf-data-binding.csproj", "{01DBB7C8-CCB9-4A20-A2BE-77511C368FF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{9DAF67CC-69EA-46AA-A7A0-6B4180E1729C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DAF67CC-69EA-46AA-A7A0-6B4180E1729C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DAF67CC-69EA-46AA-A7A0-6B4180E1729C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01DBB7C8-CCB9-4A20-A2BE-77511C368FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DBB7C8-CCB9-4A20-A2BE-77511C368FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DBB7C8-CCB9-4A20-A2BE-77511C368FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DBB7C8-CCB9-4A20-A2BE-77511C368FF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
