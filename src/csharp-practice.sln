@@ -34,6 +34,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-mvvm", "wpf-mvvm\wpf-mv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-caculator", "wpf-caculator\wpf-caculator.csproj", "{9EE3BA0E-7B2C-4AA7-B68F-EED8253BEDCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binary-tree", "binary-tree\binary-tree.csproj", "{BB186104-93DA-4273-AB02-107676F10C8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cartesian-product", "cartesian-product\cartesian-product.csproj", "{2F7BAAB4-D255-44B1-AE0D-57058130EABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +108,14 @@ Global
 		{9EE3BA0E-7B2C-4AA7-B68F-EED8253BEDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EE3BA0E-7B2C-4AA7-B68F-EED8253BEDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EE3BA0E-7B2C-4AA7-B68F-EED8253BEDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB186104-93DA-4273-AB02-107676F10C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB186104-93DA-4273-AB02-107676F10C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB186104-93DA-4273-AB02-107676F10C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB186104-93DA-4273-AB02-107676F10C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7BAAB4-D255-44B1-AE0D-57058130EABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7BAAB4-D255-44B1-AE0D-57058130EABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7BAAB4-D255-44B1-AE0D-57058130EABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7BAAB4-D255-44B1-AE0D-57058130EABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
