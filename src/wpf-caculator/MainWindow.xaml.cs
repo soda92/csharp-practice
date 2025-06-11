@@ -28,7 +28,7 @@ namespace wpf_caculator
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
@@ -76,6 +76,11 @@ namespace wpf_caculator
 
             this.DataContext = this;
 
+            ClearAll();
+        }
+
+        private void ClearAll()
+        {
             Screen.Text = "";
             firstParam = "";
             secondParam = "";
@@ -85,11 +90,7 @@ namespace wpf_caculator
 
         private void ClearInputs(object sender, RoutedEventArgs e)
         {
-            Screen.Text = "";
-            firstParam = "";
-            secondParam = "";
-            step = 0;
-            Calc.IsEnabled = false;
+            ClearAll();
         }
 
         private void CalcResult(object sender, RoutedEventArgs eventArgs)
@@ -125,28 +126,28 @@ namespace wpf_caculator
             {
                 case "+":
                     {
-                        ClearInputs(null, null);
+                        ClearAll();
                         int result = oprand1 + oprand2;
                         Screen.Text = result.ToString();
                         break;
                     }
                 case "-":
                     {
-                        ClearInputs(null, null);
+                        ClearAll();
                         int result = oprand1 - oprand2;
                         Screen.Text = result.ToString();
                         break;
                     }
                 case "*":
                     {
-                        ClearInputs(null, null);
+                        ClearAll();
                         int result = oprand1 * oprand2;
                         Screen.Text = result.ToString();
                         break;
                     }
                 case "/":
                     {
-                        ClearInputs(null, null);
+                        ClearAll();
                         decimal result = (decimal)oprand1 / (decimal)oprand2;
                         Screen.Text = result.ToString();
                         break;

@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
 
         <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Height="60" TextAlignment="Center"
-                 FontSize="18" Margin="5" Name="Screen" Text="{Binding ScreenText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                 FontSize="18" Margin="5" Name="Screen" Text="{Binding ScreenText, Mode=OneWay}" IsReadOnly="True"></TextBox>
         <!--numbers-->  
         <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="7"></Button>
         <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="8"></Button>
