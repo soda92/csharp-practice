@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-navigation", "wpf-navig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-mvvm", "wpf-mvvm\wpf-mvvm.csproj", "{EFDD9448-7AB1-4D09-997C-D0BF5C131BA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-caculator", "wpf-caculator\wpf-caculator.csproj", "{9EE3BA0E-7B2C-4AA7-B68F-EED8253BEDCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,10 @@ Global
 		{EFDD9448-7AB1-4D09-997C-D0BF5C131BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFDD9448-7AB1-4D09-997C-D0BF5C131BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFDD9448-7AB1-4D09-997C-D0BF5C131BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE3BA0E-7B2C-4AA7-B68F-EED8253BEDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE3BA0E-7B2C-4AA7-B68F-EED8253BEDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE3BA0E-7B2C-4AA7-B68F-EED8253BEDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE3BA0E-7B2C-4AA7-B68F-EED8253BEDCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
