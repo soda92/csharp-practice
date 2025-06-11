@@ -24,25 +24,25 @@
         <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Height="60" TextAlignment="Center"
                  FontSize="18" Margin="5" Name="Screen" Text="{Binding ScreenText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         <!--numbers-->  
-        <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource buttonStyle}" Click="Number7">7</Button>
-        <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource buttonStyle}" Click="Number8">8</Button>
-        <Button Grid.Row="1" Grid.Column="2" Style="{StaticResource buttonStyle}" Click="Number9">9</Button>
-        <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource buttonStyle}" Click="Number4">4</Button>
-        <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource buttonStyle}" Click="Number5">5</Button>
-        <Button Grid.Row="2" Grid.Column="2" Style="{StaticResource buttonStyle}" Click="Number6">6</Button>
-        <Button Grid.Row="3" Grid.Column="0" Style="{StaticResource buttonStyle}" Click="Number1">1</Button>
-        <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource buttonStyle}" Click="Number2">2</Button>
-        <Button Grid.Row="3" Grid.Column="2" Style="{StaticResource buttonStyle}" Click="Number3">3</Button>
-        <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource buttonStyle}" Click="Number0">0</Button>
+        <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="7"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="8"></Button>
+        <Button Grid.Row="1" Grid.Column="2" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="9"></Button>
+        <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="4"></Button>
+        <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="5"></Button>
+        <Button Grid.Row="2" Grid.Column="2" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="6"></Button>
+        <Button Grid.Row="3" Grid.Column="0" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="1"></Button>
+        <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="2"></Button>
+        <Button Grid.Row="3" Grid.Column="2" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="3"></Button>
+        <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource buttonStyle}" Click="Number_Click" Content="0"></Button>
 
         <!--Clear and calc-->
         <Button Grid.Row="4" Grid.Column="0" Style="{StaticResource buttonStyle}" Click="ClearInputs">清除</Button>
         <Button Grid.Row="4" Grid.Column="2" Style="{StaticResource buttonStyle}" Name="Calc" Click="CalcResult">=</Button>
         <!--operators-->
-        <Button Grid.Row="1" Grid.Column="3" Style="{StaticResource buttonStyle}" Click="OperatorAdd">+</Button>
-        <Button Grid.Row="2" Grid.Column="3" Style="{StaticResource buttonStyle}" Click="OperatorMinus">-</Button>
-        <Button Grid.Row="3" Grid.Column="3" Style="{StaticResource buttonStyle}" Click="OperatorMultiply">*</Button>
-        <Button Grid.Row="4" Grid.Column="3" Style="{StaticResource buttonStyle}" Click="OperatorDivide">/</Button>
+        <Button Grid.Row="1" Grid.Column="3" Style="{StaticResource buttonStyle}" Click="Operator_Click" Content="+"></Button>
+        <Button Grid.Row="2" Grid.Column="3" Style="{StaticResource buttonStyle}" Click="Operator_Click" Content="-"></Button>
+        <Button Grid.Row="3" Grid.Column="3" Style="{StaticResource buttonStyle}" Click="Operator_Click" Content="*"></Button>
+        <Button Grid.Row="4" Grid.Column="3" Style="{StaticResource buttonStyle}" Click="Operator_Click" Content="/"></Button>
 
     </Grid>
 </Window>

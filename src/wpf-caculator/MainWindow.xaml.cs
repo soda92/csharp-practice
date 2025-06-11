@@ -178,64 +178,21 @@ namespace wpf_caculator
             Calc.IsEnabled = true;
         }
 
-        private void Number0(object sender, RoutedEventArgs eventArgs)
+        private void Number_Click(object sender, RoutedEventArgs eventArgs)
         {
-            AddNumber(0);
-        }
-        private void Number1(object sender, RoutedEventArgs eventArgs)
-        {
-            AddNumber(1);
-        }
-        private void Number2(object sender, RoutedEventArgs eventArgs)
-        {
-            AddNumber(2);
-        }
-        private void Number3(object sender, RoutedEventArgs eventArgs)
-        {
-            AddNumber(3);
-        }
+            var button = sender as Button;
+            if (button == null) return;
 
-        private void Number4(object sender, RoutedEventArgs eventArgs)
-        {
-            AddNumber(4);
-        }
-        private void Number5(object sender, RoutedEventArgs eventArgs)
-        {
-            AddNumber(5);
-        }
-        private void Number6(object sender, RoutedEventArgs eventArgs)
-        {
-            AddNumber(6);
-        }
-        private void Number7(object sender, RoutedEventArgs eventArgs)
-        {
-            AddNumber(7);
-        }
-        private void Number8(object sender, RoutedEventArgs eventArgs)
-        {
-            AddNumber(8);
-        }
-        private void Number9(object sender, RoutedEventArgs eventArgs)
-        {
-            AddNumber(9);
-        }
+            int number = int.Parse(button.Content.ToString()!);
 
-        private void OperatorAdd(object sender, RoutedEventArgs eventArgs)
-        {
-            Operator("+");
+            AddNumber(number);
         }
-
-        private void OperatorMinus(object sender, RoutedEventArgs eventArgs)
+        
+        private void Operator_Click(object sender, RoutedEventArgs eventArgs)
         {
-            Operator("-");
-        }
-        private void OperatorMultiply(object sender, RoutedEventArgs eventArgs)
-        {
-            Operator("*");
-        }
-        private void OperatorDivide(object sender, RoutedEventArgs eventArgs)
-        {
-            Operator("/");
+            var button = sender as Button;
+            if (button == null) return;
+            Operator(button.Content.ToString()!);
         }
     }
 }
