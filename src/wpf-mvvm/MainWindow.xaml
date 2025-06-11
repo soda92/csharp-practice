@@ -4,9 +4,40 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpf_mvvm"
+        xmlns:viewmodels="clr-namespace:wpf_mvvm.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="User Profile (MVVM Example)" Height="450" Width="800">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="User Profile" FontSize="24" FontWeight="Bold" Margin="0,0,0,15"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="First Name:" Margin="0,5,10,5"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,5"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Last Name:" Margin="0,5,10,5"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,5"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Full Name:" Margin="0,5,10,5"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding FullName}" FontWeight="Bold" Margin="0,5"/>
+
+        <Border Grid.Row="4" Grid.ColumnSpan="2" Height="20"/>
+
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Content="Save User"
+                Command="{Binding SaveUserCommand}"
+                HorizontalAlignment="Right" Width="100" Height="30"/>
 
     </Grid>
 </Window>

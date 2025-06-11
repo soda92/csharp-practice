@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-data-binding", "wpf-dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-navigation", "wpf-navigation\wpf-navigation.csproj", "{0164680C-8428-435D-AFEC-41873B31E7BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-mvvm", "wpf-mvvm\wpf-mvvm.csproj", "{EFDD9448-7AB1-4D09-997C-D0BF5C131BA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,10 @@ Global
 		{0164680C-8428-435D-AFEC-41873B31E7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0164680C-8428-435D-AFEC-41873B31E7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0164680C-8428-435D-AFEC-41873B31E7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDD9448-7AB1-4D09-997C-D0BF5C131BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDD9448-7AB1-4D09-997C-D0BF5C131BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDD9448-7AB1-4D09-997C-D0BF5C131BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDD9448-7AB1-4D09-997C-D0BF5C131BA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
