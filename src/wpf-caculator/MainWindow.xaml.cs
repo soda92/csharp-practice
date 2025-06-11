@@ -81,16 +81,19 @@ namespace wpf_caculator
 
         private void ClearAll()
         {
-            Screen.Text = "";
+            _result = "";
+            isDisplayResult = false;
             firstParam = "";
             secondParam = "";
             step = 0;
+            _operator = "+";
             Calc.IsEnabled = false;
         }
 
         private void ClearInputs(object sender, RoutedEventArgs e)
         {
             ClearAll();
+            OnPropertyChanged(nameof(ScreenText));
         }
 
         private void CalcResult(object sender, RoutedEventArgs eventArgs)
@@ -128,32 +131,33 @@ namespace wpf_caculator
                     {
                         ClearAll();
                         int result = oprand1 + oprand2;
-                        Screen.Text = result.ToString();
+                        _result = result.ToString();
                         break;
                     }
                 case "-":
                     {
                         ClearAll();
                         int result = oprand1 - oprand2;
-                        Screen.Text = result.ToString();
+                        _result = result.ToString();
                         break;
                     }
                 case "*":
                     {
                         ClearAll();
                         int result = oprand1 * oprand2;
-                        Screen.Text = result.ToString();
+                        _result = result.ToString();
                         break;
                     }
                 case "/":
                     {
                         ClearAll();
                         decimal result = (decimal)oprand1 / (decimal)oprand2;
-                        Screen.Text = result.ToString();
+                        _result = result.ToString();
                         break;
                     }
             }
-
+            isDisplayResult = true;
+            OnPropertyChanged(nameof(ScreenText));
         }
 
         private void AddNumber(int number)
